@@ -87,7 +87,9 @@ html, body {
 	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
-	text-decoration: none;
+	text-decoration: none;        
+	font-family: @big-shoulders-cursive;
+	font-size: 2.4rem;
   }
 /* Links - change color on hover */
 .topnav a:hover {
@@ -96,18 +98,57 @@ html, body {
   }
   .column {  
 	float: left;
-	width: 33.33%;	 
+	width: 33.33%;
+	font-family: @big-shoulders-cursive;
+	padding: 10px;
+	h2 {
+		font-family: @big-shoulders-cursive;
+		font-size: 2.0rem;
+	}
+	p {
+		font-size: 1.8rem;
+		border-top: 1px solid black;
+		padding: 10px;
+	}
+	
+	  
+	
 }
 
-  
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
-  clear: both;
-  
+  clear: both;  
+  }
+.column1 {
+	padding: 5px;
+	// border: @generalBorder;	
 }
+.column2 {
+	padding: 5px;
+	// border: @generalBorder;
+	ul {
+		border-top: @generalBorder;
+	}
+		ul li {
+			font-size: 1.8rem;
+			padding: 5px;
+		}
+}
+	.column3 {
+		padding: 5px;
+		// border: @generalBorder;
+		ul {
+			border-top: 1px solid black;
+		}
+			ul li {
+				font-size: 1.8rem;
+				padding: 5px;
+			}
+	}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
   .column {
@@ -128,7 +169,5 @@ html, body {
 	background-color: black;
 	color: white;
 	text-align: center;
-  }
-
-	  
+  }	  
 }
