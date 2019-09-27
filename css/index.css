@@ -135,7 +135,7 @@ body {
   height: 100%;
 }
 .header {
-  background-image: linear(90deg orange, white);
+  background-color: #F1F1F1;
   text-align: left;
   padding: 10px;
   font-family: 'Roboto Slab', serif;
