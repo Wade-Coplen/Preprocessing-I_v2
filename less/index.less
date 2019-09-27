@@ -149,17 +149,7 @@ html, body {
 			}
 	}
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  
-}
-.footer {
-  background-color: #F1F1F1;
-  text-align: center;
-  padding: 10px;
-}
+
 
 .footer {
 	position: fixed;
@@ -169,5 +159,14 @@ html, body {
 	background-color: black;
 	color: white;
 	text-align: center;
-  }	  
+	padding: 10px;
+	font-family: @big-shoulders-cursive;
+	font-size: 2.0rem;
+}	  
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
