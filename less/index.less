@@ -56,4 +56,118 @@ table {
 html, body {
     height: 100%;
 }
+// **************************** MY CODE *********************************
+// ******* VARIABLES ******
+@robot-serif: 'Roboto Slab', serif;
+@robotosan-serif: 'Roboto', sans-serif;
+@big-shoulders-cursive: 'Big Shoulders Display', cursive;
+@name: 4em;
+@first-name: 'Roboto Slab', serif;
+@last-name: 'Roboto', sans-serif;
+@generalBorder: 1px solid black;
+@navContainerWidth: 75px;
+@navFont: 5.3em;
+// ***************************
+.header {
+	// background-image: linear(90deg orange, white);
+	background-color: #F1F1F1;
+	text-align: left;
+	padding: 10px;
+	font-family: @robot-serif;
+  }
+  /* The navbar container */
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+	// background-image: linear-gradient(to right, orange , white);
+  }
+  /* Navbar links */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;        
+	font-family: @big-shoulders-cursive;
+	font-size: 2.4rem;
+  }
+/* Links - change color on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  .column {  
+	float: left;
+	width: 33.33%;
+	font-family: @big-shoulders-cursive;
+	padding: 10px;
+	h2 {
+		font-family: @big-shoulders-cursive;
+		font-size: 2.0rem;
+	}
+	p {
+		font-size: 1.8rem;
+		border-top: 1px solid black;
+		padding: 10px;
+	}
+	
+	  
+	
+}
 
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;  
+  }
+.column1 {
+	padding: 5px;
+	// border: @generalBorder;	
+}
+.column2 {
+	padding: 5px;
+	// border: @generalBorder;
+	ul {
+		border-top: @generalBorder;
+	}
+		ul li {
+			font-size: 1.8rem;
+			padding: 5px;
+		}
+}
+	.column3 {
+		padding: 5px;
+		// border: @generalBorder;
+		ul {
+			border-top: 1px solid black;
+		}
+			ul li {
+				font-size: 1.8rem;
+				padding: 5px;
+			}
+	}
+
+
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-family: @big-shoulders-cursive;
+	font-size: 2.0rem;
+}	  
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
